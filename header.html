@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style type="text/css">
+        body {
+            padding: 0;
+            font-size: 10pt;
+            behavior: url(css/csshover.htc);
+        }
+
+        .toptitle {
+            height: 40px;
+            line-height: 40px;
+            text-align: left;
+            font-size: 11pt;
+            font-weight: bold;
+            color: White;
+            background: #e4393c;
+            padding-left: 20px;
+        }
+
+        .submenu {
+            display: none;
+            width: 715px;
+            left: 60px;
+            position: absolute;
+            top: 50px;
+            border: 1px solid #DDD;
+            z-index: 4;
+            background: white;
+            box-shadow: 0 0 8px #DDD;
+            -moz-box-shadow: 0 0 8px #DDD;
+            -webkit-box-shadow: 0 0 8px #DDD;
+        }
+
+        .toptitle:hover .submenu {
+            display: block;
+        }
+        .submenu dl{
+            display: block;
+            border-bottom: 1px solid #EEE;
+            padding-bottom: 6px;
+            overflow: hidden;
+            font-size: 6pt;
+            color: #e4393c;
+        }
+        .submenu dl dt
+        {
+            display: block;
+            float: left;
+            width: 60px;
+            text-align: right;
+            height: 22px;
+            line-height: 22px;
+            padding-right: 6px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <ul>
+        <div class="toptitle">信息系统导航
+            <div class="submenu">
+                <dl>
+                    <dt><a href="#">工作安排</a></dt>
+                    <dd>
+                        <a href="#">上级工作部署</a> <a href="#">本部门工作部署</a> <a href="#">工作安排</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="submenu">
+            aaaa
+        </div>
+    </ul>
+
 </body>
+
 </html>
